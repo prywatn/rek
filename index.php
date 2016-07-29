@@ -22,156 +22,158 @@ and open the template in the editor.
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#dodawanie">
-                                <div class="text-center"> Dodawanie </div>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#addition">
+                                <div class="text-center">Addition</div>
                             </a>
                         </h4>
                     </div>
-                    <div id="dodawanie" class="panel-collapse collapse">
+                    <div id="addition" class="panel-collapse collapse">
                         <div class="panel-body">
-                            <form role="form" >
+                            <form role="form" method="get" action="controller/calculator.php" >
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="liczba1">
+                                    <input type="text" class="form-control" name="number1" id="number1">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="liczba2">
+                                    <input type="text" class="form-control" name="mumber2" id="number2">
                                 </div>
                                 <fieldset disabled>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" id="number">
                                     </div>
                                 </fieldset>
-                                <button id="obdodawanie" type="submit" class="btn btn-primary">Oblicz</button>
+                                <button id="obdodawanie" type="submit" class="btn btn-primary">Calculate</button>
                             </form>                    
                         </div>
                     </div>
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#odejmowanie">
-                            <div class="text-center">Odejmowanie</div>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#subtraction">
+                            <div class="text-center">Subtraction</div>
                             </a>
                         </div>
-                        <div id="odejmowanie" class="panel-collapse in collapse">
+                        <div id="subtraction" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <form role="form">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba1">
+                                        <input type="text" class="form-control" name="number1" id="number1">
                                     </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="liczba2">
+                                    <input type="text" class="form-control" name="number2" id="number2">
                                 </div>
                                 <fieldset disabled>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" id="number">
                                     </div>
                                 </fieldset>
-                                    <button type="submit" id="odejmowanie" class="btn btn-primary">Oblicz</button>
+                                    <button type="submit" id="subtraction" class="btn btn-primary">Calculate</button>
                                 </form>                    
                             </div>
                         </div>
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#mnozenie">
-                                <div class="text-center"> Mnożenie</div>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#multiplication">
+                                <div class="text-center">Multiplication</div>
                             </a>
                         </div>
-                        <div id="mnozenie" class="panel-collapse collapse">
+                        <div id="multiplication" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <form role="form">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" name="number1" id="number1">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" name="number2" id="number2">
                                     </div>
                                     <fieldset disabled>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="liczba">
+                                            <input type="text" class="form-control" id="number">
                                         </div>
                                     </fieldset>
-                                    <button type="submit" class="btn btn-primary">Oblicz</button>
+                                    <button type="submit" class="btn btn-primary">Calculate</button>
                                 </form>
                             </div>
                         </div>
                 <div class="panel panel-info">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#dzielenie">
-                                <div class="text-center">Dzielenie</div>
+                            <a data-toggle="collapse" data-parent="#accordion" href="#division">
+                                <div class="text-center">Division</div>
                             </a>
                         </h4>
                     </div>
-                    <div id="dzielenie" class="panel-collapse collapse">
+                    <div id="division" class="panel-collapse collapse">
                         <div class="panel-body">
-                                <form role="form">
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="number1" id="number1">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="number2" id="number2">
+                                </div>
+                                <fieldset disabled>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" id="number">
                                     </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
-                                    </div>
-                                    <fieldset disabled>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="liczba">
-                                        </div>
-                                    </fieldset>
-                                    <button type="submit" class="btn btn-primary">Oblicz</button>
-                                </form>             
-                            </div>
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary">Calculate</button>
+                            </form>             
                         </div>
+                    </div>
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#pierwiastek">
-                                        <div class="text-center">Pierwiastek</div>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#element">
+                                        <div class="text-center">Element</div>
                                     </a>
                                 </h4>
                             </div>
-                        <div id="pierwiastek" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
-                                    </div>
-                                    <fieldset disabled>
+                            <div id="element" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <form role="form">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="liczba">
+                                            <input type="text" class="form-control" name="number1" id="number1">
                                         </div>
-                                    </fieldset>
-                                    <button type="submit" class="btn btn-primary">Oblicz</button>
-                                </form>             
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="number2" id="number2">
+                                        </div>
+                                        <fieldset disabled>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" id="number">
+                                            </div>
+                                        </fieldset>
+                                        <button type="submit" class="btn btn-primary">Calculate</button>
+                                    </form>             
+                                </div>
                             </div>
-                        </div>
                         <div class="panel panel-info">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#logarytm">
-                                        <div class="text-center">Logarytmowanie</div>
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#logarithm">
+                                        <div class="text-center">Logarithm</div>
                                     </a>
                                 </h4>
                             </div>
-                            <div id="logarytm" class="panel-collapse collapse">
+                        <div id="logarithm" class="panel-collapse collapse">
+                            <div class="panel-body">                               
                                 <form role="form">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" name="number1" id="number1">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" id="liczba">
+                                        <input type="text" class="form-control" name="number2" id="number2">
                                     </div>
                                     <fieldset disabled>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="liczba" >
+                                            <input type="text" class="form-control" id="number" >
                                         </div>
                                     </fieldset>
-                                    <button type="submit" class="btn btn-primary">Oblicz</button>
+                                    <button type="submit" class="btn btn-primary">Calculate</button>
                                 </form>
                             </div>
                         </div>
+                    </div>
             
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
             <!-- Latest compiled and minified JavaScript -->
