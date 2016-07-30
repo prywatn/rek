@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -13,6 +8,8 @@ and open the template in the editor.
         <link href='http://fonts.googleapis.com/css?family=Abril+Fatface&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+         <script src="//code.jquery.com/jquery-latest.js"></script>
+        <script src="main.js" type="text/javascript"></script>
     </head>
 <body>
 <div class="container">
@@ -27,9 +24,9 @@ and open the template in the editor.
                             </a>
                         </h4>
                     </div>
-                    <div id="addition" class="panel-collapse collapse">
+                    <div id="addition" class="panel-collapse nt collapse">
                         <div class="panel-body">
-                            <form role="form" method="get" action="controller/calculator.php" >
+                            <form role="form" method="get" action="#" >
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="number1" id="number1">
                                 </div>
@@ -41,7 +38,7 @@ and open the template in the editor.
                                         <input type="text" class="form-control" id="number">
                                     </div>
                                 </fieldset>
-                                <button id="obdodawanie" type="submit" class="btn btn-primary">Calculate</button>
+                                <button id="addition" type="submit" class="btn btn-primary">Calculate</button>
                             </form>                    
                         </div>
                     </div>
@@ -49,8 +46,9 @@ and open the template in the editor.
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#subtraction">
-                            <div class="text-center">Subtraction</div>
-                            </a>
+                                <div class="text-center">Subtraction</div>
+                                </a>
+                            </h4>   
                         </div>
                         <div id="subtraction" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -75,7 +73,8 @@ and open the template in the editor.
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#multiplication">
                                 <div class="text-center">Multiplication</div>
-                            </a>
+                                </a>
+                            </h4>
                         </div>
                         <div id="multiplication" class="panel-collapse collapse">
                             <div class="panel-body">
