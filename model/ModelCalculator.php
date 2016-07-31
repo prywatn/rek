@@ -13,32 +13,47 @@ interface CalculatorInterface{
 }
 
 class ModelCalculator implements CalculatorInterface {
-    public function addition($augend=4,$addend=4){
-
-             $suma = $augend + $addend;
-             
-             return $suma;
+    public function addition($augend,$addend){
+            try {
+                
+                return $augend + $addend;
+                
+            } catch (Exception $ex) {
+                
+                return $ex->getMessage();
+        } 
+            
     }
     
     public function substraction($minuend,$subtrahend){
         try {
-        return $minuend - $subtrahend;
+            
+            return $minuend - $subtrahend;
+            
         } catch (Exception $ex) {
+            
             return $ex->getMessage();
         }
     }
     public function multiplication($multiplier,$multiplicand){
         try {
+            
             return $multiplier * $multiplicand;
+            
         } catch (Exception $ex) {
+            
             return; $ex->getMessage();
         }
     }
     public function division($dividend,$divisor){
         try {
+            
             return $dividend/$divisor;
+            
         } catch (Exception $ex) {
+            
             return $ex->getMessage();
+            
         }
     }
     public function modulo($dividend,$divisor){
